@@ -1,7 +1,7 @@
 # Deidleranator
 # Author: Mae C.
 # Date Created: November 21, 2024
-# Version: 1.0.0
+# Version: 2.0.0
 
 This project is a deidleranator that keeps a computer awake by simulating user interaction every 10 seconds.
 
@@ -28,6 +28,16 @@ To install the required packages, run the following command in your terminal:
 ## Running the Program
 First, make sure the mouse is visible to the location where you plan to leave it. To run the program, run the following command in your terminal:
 `py deidleranator.py`
+
+## Creating the executable
+- First install pyinstaller
+`pip install pyinstaller`
+or imstall the required packages from the `requirements.txt` file
+
+- Then run the following command:
+`pyinstaller --onefile --path=deidleranator_venv/Lib/site-packages index.py`
+
+- Test the executable file located in the `dist` folder created by running the command above.
 
 ## Note
 Please add the name of the virtual environment to .gitignore if you plan to change it.
